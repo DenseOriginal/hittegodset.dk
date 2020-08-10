@@ -2,3 +2,8 @@
     base = "/"
     publish = "dist/apps/website"
     command = "nx build website"
+
+[context.production]
+    base = "/"
+    publish = "dist/apps/website"
+    command = "nx build website --prod"
