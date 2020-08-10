@@ -1,9 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import "~@angular/material/theming";
+
+$typography: mat-typography-config(
+  $font-family: 'Poppins, sans-serif'
+);
+@include mat-core($typography);
+
+@import "./styles/themes.scss";
+
+// Custom components
+// Import custom components here
+
+// @import "./app/layout/content/content.component.scss";
+// @import "./app/layout/footer/footer.component.scss";
+// @import "./app/layout/navbar/navbar.component.scss";
+// @import "./app/views/projects/card/card.component.scss";
+
+@mixin custom-components-theme($theme) {
+  // @include hero($theme);
+  // @include toolbar($theme);
+  // @include footer($theme);
+  // @include card($theme);
+}
+
+@include angular-material-theme($hittegodset-light-theme);
+@include custom-components-theme($hittegodset-light-theme);
+
+/* You can add global styles to this file, and also import other style files */
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.dense-toolbar {
+  height: 48px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

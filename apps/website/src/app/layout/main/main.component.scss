@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+main {
+    --nav-height: 248px;
+
+    min-height: calc(100% - var(--nav-height));
+
+    @include respond-to(small) {
+        --nav-height: 48px;
+    }
+}
