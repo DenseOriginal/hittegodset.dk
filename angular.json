@@ -10,7 +10,7 @@
       },
       "root": "apps/website",
       "sourceRoot": "apps/website/src",
-      "prefix": "hittegodset.dk",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
