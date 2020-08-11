@@ -1,0 +1,19 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    width: 75%;
+    overflow: hidden;
+
+    h1 {
+        margin: 0px 16px;
+        min-width: fit-content;
+        text-align: center;
+    }
+
+    mat-divider {
+        width: 100%;
+        flex-shrink: 1;
+    }
+}
