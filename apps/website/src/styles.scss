@@ -11,16 +11,10 @@ $typography: mat-typography-config(
 // Custom components
 // Import custom components here
 
-// @import "./app/layout/content/content.component.scss";
-// @import "./app/layout/footer/footer.component.scss";
-// @import "./app/layout/navbar/navbar.component.scss";
-// @import "./app/views/projects/card/card.component.scss";
+@import "./app/layout/header/header.component.scss";
 
 @mixin custom-components-theme($theme) {
-  // @include hero($theme);
-  // @include toolbar($theme);
-  // @include footer($theme);
-  // @include card($theme);
+  @include navbar($theme)
 }
 
 @include angular-material-theme($hittegodset-light-theme);

@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables.scss';
 
 .sidenav-container {
   height: 100%;
@@ -21,9 +21,17 @@
 .links {
   a {
     margin: 0px 4px;
+  }
+}
+
+.handset-links {
+  a {
+    &:focus {
+      background-color: white;
+    }
 
     &.active {
-      backdrop-filter: brightness(0.90);
+      backdrop-filter: brightness(0.93);
     }
   }
 }
@@ -35,5 +43,18 @@
 
   @include respond-to(small) {
     display: none;
+  }
+}
+
+// Link mixin
+@mixin navbar($theme) {
+  // Extract the color configuration in case a theme has been passed.
+  // This allows consumers to either pass a theme object or a color configuration.
+  $config: mat-get-color-config($theme);
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($config, primary);
+
+  .links a.active {
+    background-color: mat-color($primary, 700);
   }
 }
