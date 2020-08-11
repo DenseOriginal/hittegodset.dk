@@ -16,4 +16,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    SameSite = "Lax"
+    Set-Cookie = "SameSite=lax"
