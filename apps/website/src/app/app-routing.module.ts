@@ -8,7 +8,7 @@ const routes: Routes = [
     component: MainLayout,
     children: [
       { path: '', loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule) },
-      { path: 'produkter', loadChildren: () => import('./views/produkter/produkter.module').then(m => m.ProdukterModule) },
+      { path: 'biksen', loadChildren: () => import('./views/biksen/biksen.module').then(m => m.biksenModule) },
       { path: 'kød', loadChildren: () => import('./views/koed/koed.module').then(m => m.KoedModule) },
       { path: 'køkkenhaver', loadChildren: () => import('./views/koekkenhaver/koekkenhaver.module').then(m => m.KoekkenhaverModule) },
       { path: 'kontakt', loadChildren: () => import('./views/kontakt/kontakt.module').then(m => m.KontaktModule) },

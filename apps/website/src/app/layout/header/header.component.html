@@ -7,7 +7,7 @@
     <mat-nav-list class="handset-links">
      
       <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" (click)="drawer.close()">Forside</a>
-      <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/produkter" (click)="drawer.close()">Produkter</a>
+      <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/biksen" (click)="drawer.close()">Biksen</a>
       <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/kød" (click)="drawer.close()">Kød</a>
       <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/køkkenhaver" (click)="drawer.close()">Køkkenhaver</a>
       <a mat-list-item routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/kontakt" (click)="drawer.close()">Kontakt</a>
@@ -29,7 +29,7 @@
       </button>
       <div *ngIf="!(isHandset$ | async)" class="links">
         <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Forside</a>
-        <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/produkter">Produkter</a>
+        <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/biksen">Biksen</a>
         <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/kød">Kød</a>
         <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/køkkenhaver">Køkkenhaver</a>
         <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/kontakt">Kontakt</a>
