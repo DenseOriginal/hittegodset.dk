@@ -12,6 +12,7 @@ const routes: Routes = [
       { path: 'kød', loadChildren: () => import('./views/koed/koed.module').then(m => m.KoedModule) },
       { path: 'køkkenhaver', loadChildren: () => import('./views/koekkenhaver/koekkenhaver.module').then(m => m.KoekkenhaverModule) },
       { path: 'kontakt', loadChildren: () => import('./views/kontakt/kontakt.module').then(m => m.KontaktModule) },
+      { path: 'æg', loadChildren: () => import('./views/aeg/aeg.module').then(m => m.AegModule) },
     ]
   },
 ];
